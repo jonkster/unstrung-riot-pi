@@ -1163,7 +1163,7 @@ void network_interface::main_loop(FILE *verbose, rpl_debug *debug)
                         /* got something else */
                         if(poll_if[i].fd == netlink_fd) {
                             empty_socket(debug);
-                            look_for_new_interfaces(debug);
+                            //look_for_new_interfaces(debug);
                         }
                         if(poll_if[i].fd == nd_socket) {
                             receive(now, debug);
